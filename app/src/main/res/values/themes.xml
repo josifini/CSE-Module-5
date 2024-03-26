@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Existing theme styles -->
+
+    <!-- Your new theme without an ActionBar -->
+    <style name="Theme.HealthFit.NoActionBar" parent="Base.Theme.HealthFit">
+        <!-- Customize your theme here -->
+    </style>
+</resources>

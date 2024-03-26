@@ -1,0 +1,28 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/workoutsFragment">
+
+    <fragment
+        android:id="@+id/workoutsFragment"
+        android:name="com.example.healthfit.WorkoutsFragment"
+        android:label="@string/workouts_fragment_label"
+        tools:layout="@layout/fragment_workouts">
+
+        <action
+            android:id="@+id/action_workoutsFragment_to_dietTrackingFragment"
+            app:destination="@id/dietTrackingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dietTrackingFragment"
+        android:name="com.example.healthfit.DietTrackingFragment"
+        android:label="@string/diet_tracking_fragment_label"
+        tools:layout="@layout/fragment_diet_tracking">
+
+        <action
+            android:id="@+id/action_dietTrackingFragment_to_workoutsFragment"
+            app:destination="@id/workoutsFragment" />
+    </fragment>
+</navigation>
